@@ -7,7 +7,8 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 class WindowByLockSecurity implements Runnable {
     private int ticket = 100;
-    private ReentrantLock lock = new ReentrantLock();
+    // 如果是继承Thread类方式则需要使用static修饰
+    private /* static */ ReentrantLock lock = new ReentrantLock();
     
     @Override
     public void run() {

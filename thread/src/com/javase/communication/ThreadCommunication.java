@@ -5,7 +5,7 @@ package com.javase.communication;
  */
 class Number implements Runnable {
     private int number = 1;
-    private Object lock = new Object();
+    private Object obj = new Object();
     
     /**
      * wait()、notify()、notifyAll()
@@ -16,10 +16,10 @@ class Number implements Runnable {
     public void run() {
         while (true) {
             // synchronized (this) {
-            synchronized (lock) {
+            synchronized (obj) {
                 // 唤醒一个线程
                 // notify();
-                lock.notify();
+                obj.notify();
                 if (number <= 10) {
                     try {
                         Thread.sleep(10);
@@ -33,7 +33,7 @@ class Number implements Runnable {
                 try {
                     // 阻塞当前线程
                     // wait();
-                    lock.wait();
+                    obj.wait();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
