@@ -14,7 +14,8 @@ class WindowByThreadSecurity extends Thread {
         // 同步代码块方式一
         /* while (true) {
             // 注意此处不可以使用this
-            synchronized (lock) {// synchronized (WindowByThreadSecurity.class) {
+            // synchronized (WindowByThreadSecurity.class) {
+            synchronized (lock) {
                 try {
                     Thread.sleep(10);
                 } catch (InterruptedException e) {
@@ -43,7 +44,8 @@ class WindowByThreadSecurity extends Thread {
     // 需要使用static修饰
     public static synchronized void sendTicket() throws InterruptedException {
         // 注意此处不可以使用this
-        // synchronized (lock) {// synchronized (WindowByThreadSecurity.class) {
+        // synchronized (WindowByThreadSecurity.class) {
+        // synchronized (lock) {
         Thread.sleep(10);
         if (ticket <= 0) {
             System.out.println("售罄");

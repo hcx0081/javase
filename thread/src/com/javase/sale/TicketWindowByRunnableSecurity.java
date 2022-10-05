@@ -11,7 +11,8 @@ class WindowByRunnableSecurity implements Runnable {
     public void run() {
         // 同步代码块方式一
         while (true) {
-            synchronized (this) {// synchronized (WindowByRunnableSecurity.class) {
+            // synchronized (WindowByRunnableSecurity.class) {
+            synchronized (this) {
                 try {
                     Thread.sleep(10);
                 } catch (InterruptedException e) {
@@ -38,7 +39,8 @@ class WindowByRunnableSecurity implements Runnable {
     }
     
     public /* synchronized */ void sendTicket() throws InterruptedException {
-        synchronized (this) {// synchronized (WindowByRunnableSecurity.class) {
+        // synchronized (WindowByRunnableSecurity.class) {
+        synchronized (this) {
             Thread.sleep(10);
             if (ticket <= 0) {
                 System.out.println("售罄");
