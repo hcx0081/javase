@@ -9,7 +9,7 @@ import java.io.OutputStreamWriter;
  */
 public class OutputStreamWriterTest {
     public static void main(String[] args) throws IOException {
-        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(new FileOutputStream("e:\\file.txt"),"gbk");
+        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(new FileOutputStream("e:\\file.txt"), "gbk");
         outputStreamWriter.write("你好呀");
         outputStreamWriter.close();
         //BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);

@@ -3,14 +3,6 @@ package com.javase.sale;
 /**
  * @description:
  */
-public class TicketWindowByThread {
-    public static void main(String[] args) {
-        new WindowByThread().start();
-        new WindowByThread().start();
-        new WindowByThread().start();
-    }
-}
-
 class WindowByThread extends Thread {
     private static int ticket = 5;
     
@@ -26,7 +18,15 @@ class WindowByThread extends Thread {
                 System.out.println("售罄");
                 break;
             }
-            System.out.println(Thread.currentThread() + "窗口卖了一张票，剩余：" + (--ticket) + "票");
+            System.out.println(Thread.currentThread().getName() + "窗口卖了一张票，剩余：" + (--ticket) + "票");
         }
+    }
+}
+
+public class TicketWindowByThread {
+    public static void main(String[] args) {
+        new WindowByThread().start();
+        new WindowByThread().start();
+        new WindowByThread().start();
     }
 }

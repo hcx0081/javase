@@ -3,7 +3,7 @@ package com.javase.deadlock;
 /**
  * @description:
  */
-public class DeadLock {
+public class DeadLockTest {
     public static void main(String[] args) {
         Thread deadLockThread1 = new DeadLockThread(true);
         Thread deadLockThread2 = new DeadLockThread(false);
@@ -16,9 +16,9 @@ public class DeadLock {
 }
 
 class DeadLockThread extends Thread {
-    //加上static表示所有类对象共享这个成员
-    static Object lock2 = new Object();
-    static Object lock1 = new Object();
+    // 加上static表示所有类对象共享这个成员
+    private static Object lock1 = new Object();
+    private static Object lock2 = new Object();
     boolean flag;
     
     public DeadLockThread(boolean flag) {

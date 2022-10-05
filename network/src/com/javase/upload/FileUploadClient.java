@@ -1,6 +1,9 @@
 package com.javase.upload;
 
-import java.io.*;
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.net.InetAddress;
 import java.net.Socket;
 
@@ -15,12 +18,12 @@ public class FileUploadClient {
         //向服务器端上传文件
         BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(socket.getOutputStream());
         int len;
-        while ((len=bufferedInputStream.read())!=-1){
+        while ((len = bufferedInputStream.read()) != -1) {
             bufferedOutputStream.write(len);
         }
         bufferedOutputStream.flush();
         socket.shutdownOutput();
-    
+        
         bufferedOutputStream.close();
         bufferedInputStream.close();
         socket.close();

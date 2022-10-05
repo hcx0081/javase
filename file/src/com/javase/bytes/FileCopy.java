@@ -14,7 +14,7 @@ public class FileCopy {
         int len;//存入每次读取的一个字节
         while ((len = inputStream.read()) != -1) {
             outputStream.write(len);
-            System.out.print((char)len);
+            System.out.print((char) len);
         }
         inputStream.close();
         outputStream.close();

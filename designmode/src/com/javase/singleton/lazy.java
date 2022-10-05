@@ -8,7 +8,7 @@ public class lazy {
         Man man1 = Man.getInstance();
         System.out.println(man1);
         Man man2 = Man.getInstance();
-        System.out.println(man2==man1);
+        System.out.println(man2 == man1);
         //构造器
         //Man{name='zs'}
         //true

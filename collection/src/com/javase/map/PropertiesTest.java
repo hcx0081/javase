@@ -17,7 +17,7 @@ public class PropertiesTest {
         //user=root
         //password=123
         
-        properties.setProperty("charset","中文");
-        properties.store(new FileOutputStream("D:\\IDEA\\IntelliJ IDEA 2021.3.3\\Workspace\\javase\\collection\\src\\com\\javase\\resources\\jdbc.properties"),"null");
+        properties.setProperty("charset", "中文");
+        properties.store(new FileOutputStream("D:\\IDEA\\IntelliJ IDEA 2021.3.3\\Workspace\\javase\\collection\\src\\com\\javase\\resources\\jdbc.properties"), "null");
     }
 }

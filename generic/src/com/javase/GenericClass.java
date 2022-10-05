@@ -8,7 +8,7 @@ import java.util.*;
 public class GenericClass {
     public static void main(String[] args) {
         Person<String> person = new Person<>("张三");//String类型替换泛型T
-        List<? super HashMap> list= new ArrayList<Map>();
+        List<? super HashMap> list = new ArrayList<Map>();
         list.add(new LinkedHashMap());
     }
 }

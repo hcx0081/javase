@@ -15,7 +15,7 @@ public class FileCopyByBuffer {
         byte[] buff = new byte[1024];
         int len;//存入读取到的字节数
         while ((len = inputStream.read(buff)) != -1) {
-            outputStream.write(buff,0,len);
+            outputStream.write(buff, 0, len);
             System.out.print((char) len);
         }
         inputStream.close();

@@ -21,7 +21,7 @@ public class Receiver {
         int length = datagramPacket.getLength();
         byte[] data = datagramPacket.getData();
         System.out.println(new String(data, 0, length));
-    
+        
         bytes = "hello,sender".getBytes(StandardCharsets.UTF_8);
         //datagramPacket = new DatagramPacket(bytes, bytes.length, InetAddress.getLocalHost(), 8888);
         datagramPacket = new DatagramPacket(bytes, bytes.length, InetAddress.getByName("192.168.123.24"), 8888);

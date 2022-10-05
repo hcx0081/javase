@@ -43,7 +43,7 @@ public class ReflectTest {
         
         Constructor<?> constructor = cls.getConstructor();//无参构造器
         System.out.println(constructor);//public com.javase.reflect.Person()
-
+        
         Constructor<?> constructorWithParameter = cls.getConstructor(String.class);
         System.out.println(constructorWithParameter);//public com.javase.reflect.Person(java.lang.String)
     }

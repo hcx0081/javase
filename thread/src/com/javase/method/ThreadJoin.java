@@ -1,7 +1,5 @@
 package com.javase.method;
 
-import static java.lang.Thread.sleep;
-
 /**
  * @description:
  */
@@ -10,34 +8,26 @@ public class ThreadJoin {
         Thread thread = new Thread(new EmergencyThread());
         thread.start();
         for (int i = 0; i < 4; i++) {
-            if (i == 2) { //当主线程i为2时线程插队，等到插队的线程执行完成后主线程才继续执行
+            if (i == 2) {// 当主线程i为2时让线程插队，等到插队的线程执行完成后主线程才继续执行
                 thread.join();
             }
-            sleep(1000);
+            Thread.sleep(1000);
             System.out.println(Thread.currentThread().getName() + "：" + i);
         }
-        //Thread-0：0
-        //main：0
-        //Thread-0：1
-        //main：1
-        //Thread-0：2
-        //Thread-0：3
-        //main：2
-        //main：3
-    }
-}
-
-class EmergencyThread implements Runnable {
-    
-    @Override
-    public void run() {
-        for (int i = 0; i < 4; i++) {
-            try {
-                sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println(Thread.currentThread().getName() + "：" + i);
-        }
+        // main：0
+        // Thread-0：0
+        // Thread-0：1
+        // main：1
+        // Thread-0：2
+        // Thread-0：3
+        // Thread-0：4
+        // Thread-0：5
+        // Thread-0：6
+        // Thread-0：7
+        // Thread-0：8
+        // Thread-0：9
+        // Thread-0：10
+        // main：2
+        // main：3
     }
 }

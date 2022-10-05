@@ -17,7 +17,7 @@ public class CustomException {
     }
 }
 
-class DivideByZeroException extends RuntimeException{
+class DivideByZeroException extends RuntimeException {
     public DivideByZeroException(String message) {
         super(message);
     }

@@ -1,7 +1,9 @@
 package com.javase.udp;
 
 import java.io.IOException;
-import java.net.*;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
 import java.nio.charset.StandardCharsets;
 
 /**
@@ -14,7 +16,7 @@ public class Sender {
         //DatagramPacket datagramPacket = new DatagramPacket(bytes, bytes.length, InetAddress.getLocalHost(), 9999);
         DatagramPacket datagramPacket = new DatagramPacket(bytes, bytes.length, InetAddress.getByName("192.168.123.24"), 9999);
         datagramSocket.send(datagramPacket);
-    
+        
         /*注意此处需要修改分配空间，因为datagramPacket的大小是上面发送信息时的大小*/
         bytes = new byte[1024];
         datagramPacket = new DatagramPacket(bytes, bytes.length);
