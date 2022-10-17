@@ -7,6 +7,7 @@ public class ThreadYield {
     public static void main(String[] args) throws InterruptedException {
         Thread thread = new Thread(new EmergencyThread());
         thread.start();
+        
         for (int i = 0; i < 4; i++) {
             if (i == 2) {// 当主线程i为2时线程礼让
                 Thread.yield();

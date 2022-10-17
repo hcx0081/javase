@@ -7,6 +7,7 @@ public class ThreadJoin {
     public static void main(String[] args) throws InterruptedException {
         Thread thread = new Thread(new EmergencyThread());
         thread.start();
+        
         for (int i = 0; i < 4; i++) {
             if (i == 2) {// 当主线程i为2时让线程插队，等到插队的线程执行完成后主线程才继续执行
                 thread.join();
