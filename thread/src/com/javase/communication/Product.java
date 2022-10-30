@@ -25,6 +25,7 @@ class Clerk {
             }
         }
     }
+    
     /* 上下两个方法共用一个锁对象，即clerk对象 */
     // 店员减少商品，该同步方法的锁对象为clerk对象
     public synchronized void subProduct() {
