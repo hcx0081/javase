@@ -1,5 +1,6 @@
 package com.javase.set;
 
+import java.util.LinkedHashSet;
 import java.util.TreeSet;
 
 /**
@@ -19,7 +20,8 @@ public class TreeSetAdd {
         treeSet1.add("1");
         treeSet1.add("2");
         treeSet1.add("3");
-        
-        
+    
+        LinkedHashSet<Object> objects = new LinkedHashSet<>();
+        objects.add(args);
     }
 }

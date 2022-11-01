@@ -14,7 +14,7 @@ public class ArraysTest {
         System.out.println(Arrays.equals(arr1, arr2));
         
         List<int[]> ints = Arrays.asList(new int[]{1, 2});
-        List<Integer> integers = Arrays.asList(new Integer[]{1, 2});
+        List<Integer> integers = Arrays.asList(new Integer[]{1, 2});// List<Integer> integers = Arrays.asList(1, 2);
         System.out.println(ints.size());// 1
         System.out.println(integers.size());// 2
     }
