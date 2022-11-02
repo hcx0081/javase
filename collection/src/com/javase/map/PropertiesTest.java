@@ -11,13 +11,17 @@ import java.util.Properties;
 public class PropertiesTest {
     public static void main(String[] args) throws IOException {
         Properties properties = new Properties();
-        properties.load(new FileInputStream("D:\\IDEA\\IntelliJ IDEA 2021.3.3\\Workspace\\javase\\collection\\src\\com\\javase\\resources\\jdbc.properties"));
+        FileInputStream fis = new FileInputStream("D:\\IDEA\\IntelliJ IDEA 2021.3.3\\Workspace\\javase\\collection\\src\\com\\javase\\resources\\jdbc.properties");
+        properties.load(fis);
         properties.list(System.out);
-        //-- listing properties --
-        //user=root
-        //password=123
-        
-        properties.setProperty("charset", "中文");
-        properties.store(new FileOutputStream("D:\\IDEA\\IntelliJ IDEA 2021.3.3\\Workspace\\javase\\collection\\src\\com\\javase\\resources\\jdbc.properties"), "null");
+        // -- listing properties --
+        // user=root
+        // password=123
+        fis.close();
+    
+        FileOutputStream fos = new FileOutputStream("D:\\IDEA\\IntelliJ IDEA 2021.3.3\\Workspace\\javase\\collection\\src\\com\\javase\\resources\\jdbc.properties");
+        properties.setProperty("url", "jdbc");
+        properties.store(fos, null);
+        fos.close();
     }
 }

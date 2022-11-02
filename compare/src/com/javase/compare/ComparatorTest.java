@@ -15,7 +15,7 @@ public class ComparatorTest {
         Person[] personList = {person1, person2, person3, person4};
         // Person默认不可以进行比较排序，会抛出ClassCastException异常
         Arrays.sort(personList, new Comparator<Person>() {
-            // 指定Person的排序方式：按照年龄从低到高进行排序，再按照姓名从低到高进行排序
+            // 指定Person的排序方式：先按照年龄从低到高进行排序，再按照姓名从低到高进行排序
             @Override
             public int compare(Person o1, Person o2) {
                 if (o1.getAge() > o2.getAge()) {

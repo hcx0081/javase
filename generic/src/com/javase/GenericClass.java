@@ -1,18 +1,8 @@
 package com.javase;
 
-import java.util.*;
-
 /**
  * @description:
  */
-public class GenericClass {
-    public static void main(String[] args) {
-        Person<String> person = new Person<>("张三");//String类型替换泛型T
-        List<? super HashMap> list = new ArrayList<Map>();
-        list.add(new LinkedHashMap());
-    }
-}
-
 class Person<T> {
     T name;
     
@@ -22,5 +12,11 @@ class Person<T> {
     
     public T say(T word) {
         return word;
+    }
+}
+
+public class GenericClass {
+    public static void main(String[] args) {
+        Person<String> person = new Person<>("张三");// 具体类型String替换泛型T
     }
 }

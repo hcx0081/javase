@@ -28,7 +28,7 @@ public class Person implements Comparable<Person> {
                 '}';
     }
     
-    // 指定Person的排序方式：按照年龄从低到高进行排序，再按照姓名从低到高进行排序
+    // 指定Person的排序方式：先按照年龄从低到高进行排序，再按照姓名从低到高进行排序
     @Override
     public int compareTo(Person o) {
         if (this.age > o.age) {

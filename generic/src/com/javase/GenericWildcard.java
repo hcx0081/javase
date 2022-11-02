@@ -7,15 +7,12 @@ import java.util.List;
  */
 public class GenericWildcard {
     public static void main(String[] args) {
-    
+        Plate<? extends Fruit> plate = new Plate<>();
     }
 }
 
 class Plate<T> {
     private List<T> list;
-    
-    public Plate() {
-    }
     
     public void add(T item) {
         list.add(item);
