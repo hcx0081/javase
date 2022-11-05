@@ -9,19 +9,43 @@ import java.util.Properties;
  * @Description:
  */
 public class PropertiesTest {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args){
         Properties properties = new Properties();
-        FileInputStream fis = new FileInputStream("D:\\IDEA\\IntelliJ IDEA 2021.3.3\\Workspace\\javase\\collection\\src\\com\\javase\\resources\\jdbc.properties");
-        properties.load(fis);
-        properties.list(System.out);
-        // -- listing properties --
-        // user=root
-        // password=123
-        fis.close();
+        FileInputStream fis = null;
+        try {
+            fis = new FileInputStream("collection\\src\\com\\javase\\resources\\jdbc.properties");
+            properties.load(fis);
+            properties.list(System.out);
+            // -- listing properties --
+            // user=root
+            // password=123
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fis != null) {
+                try {
+                    fis.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     
-        FileOutputStream fos = new FileOutputStream("D:\\IDEA\\IntelliJ IDEA 2021.3.3\\Workspace\\javase\\collection\\src\\com\\javase\\resources\\jdbc.properties");
-        properties.setProperty("url", "jdbc");
-        properties.store(fos, null);
-        fos.close();
+        FileOutputStream fos = null;
+        try {
+            fos = new FileOutputStream("collection\\src\\com\\javase\\resources\\jdbc.properties");
+            properties.setProperty("url", "jdbc");
+            properties.store(fos, null);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fos != null) {
+                try {
+                    fos.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 }

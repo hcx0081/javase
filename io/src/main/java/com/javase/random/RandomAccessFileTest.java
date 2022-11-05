@@ -1,10 +1,9 @@
-package com.javase.chars;
+package com.javase.random;
 
 /**
  * @Description:
  */
-public class FileReaderTest {
+public class RandomAccessFileTest {
     public static void main(String[] args) {
-    
     }
 }
