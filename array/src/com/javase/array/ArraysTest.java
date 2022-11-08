@@ -17,5 +17,11 @@ public class ArraysTest {
         List<Integer> integers = Arrays.asList(new Integer[]{1, 2});// List<Integer> integers = Arrays.asList(1, 2);
         System.out.println(ints.size());// 1
         System.out.println(integers.size());// 2
+        
+        
+        int[] arr = {1, 2, 3, 4};
+        System.out.println(arr);
+        arr = Arrays.copyOf(arr, 10);
+        System.out.println(arr);
     }
 }
