@@ -5,7 +5,7 @@ import java.lang.reflect.Field;
 /**
  * @Description:
  */
-public class ReflectMethodTest {
+public class ReflectionMethodTest {
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchFieldException {
         Class<?> cls = Class.forName("com.javase.method.Person");
         System.out.println(cls);//class com.javase.method.Person
