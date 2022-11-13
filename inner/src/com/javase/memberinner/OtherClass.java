@@ -5,6 +5,6 @@ package com.javase.memberinner;
  */
 public class OtherClass {
     public static void main(String[] args) {
-        OuterClass.InnerClass inner = new OuterClass.InnerClass();
+        // OuterClass.InnerClass inner = new OuterClass.InnerClass();
     }
 }
