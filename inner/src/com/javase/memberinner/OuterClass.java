@@ -1,7 +1,7 @@
 package com.javase.memberinner;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class OuterClass {
     public static void main(String[] args) {
@@ -12,5 +12,3 @@ public class OuterClass {
     
     }
 }
-
-

@@ -3,7 +3,7 @@ package com.javase.wrap;
 import java.io.Serializable;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class Person implements Serializable {
     private static final long serialVersionUID = 1L;

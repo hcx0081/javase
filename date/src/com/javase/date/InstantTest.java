@@ -3,7 +3,7 @@ package com.javase.date;
 import java.time.Instant;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class InstantTest {
     public static void main(String[] args) {

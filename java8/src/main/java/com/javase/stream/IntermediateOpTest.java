@@ -8,7 +8,7 @@ import java.util.function.Function;
 import java.util.stream.Stream;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class IntermediateOpTest {
     List<String> list = new ArrayList<>();
@@ -72,7 +72,7 @@ public class IntermediateOpTest {
             }
         });
         stream1 = list.stream().map(this::fromStringToStream);
-        stream1.forEach(characterStream -> characterStream.forEach(System.out::println));
+        stream1.forEach(strStream -> strStream.forEach(System.out::println));
         
         /* 类似于Collection接口中的addAll()方法，添加一个集合到一个集合中则是嵌套这个集合中的所有元素 */
         Stream<String> stream2 = list.stream().flatMap(new Function<String, Stream<? extends String>>() {

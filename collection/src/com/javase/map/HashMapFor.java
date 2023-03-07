@@ -3,7 +3,7 @@ package com.javase.map;
 import java.util.*;
 
 /**
- * @description:
+ * {@code @Description:}
  */
 public class HashMapFor {
     public static void main(String[] args) {

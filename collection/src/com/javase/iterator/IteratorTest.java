@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class IteratorTest {
     public static void main(String[] args) {

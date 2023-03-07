@@ -1,7 +1,7 @@
 package com.javase.communication;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 
 /**

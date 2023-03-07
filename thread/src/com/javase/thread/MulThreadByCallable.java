@@ -4,7 +4,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.FutureTask;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 class MyCallable implements Callable<Object> {
     @Override

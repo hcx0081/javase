@@ -3,7 +3,7 @@ package com.javase.wrap;
 import java.io.File;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class FileTest {
     public static void main(String[] args) {

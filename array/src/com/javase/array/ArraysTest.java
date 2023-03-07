@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class ArraysTest {
     static int[] arr1;

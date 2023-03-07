@@ -1,7 +1,7 @@
 package com.javase.annotation;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 // @MyAnnotationList({@MyAnnotation("hello"), @MyAnnotation("world")})
 @MyAnnotation("hello")

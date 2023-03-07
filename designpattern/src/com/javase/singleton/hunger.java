@@ -1,7 +1,7 @@
 package com.javase.singleton;
 
 /**
- * @description: 饿汉式
+ * {@code @Description:} 饿汉式
  */
 class Person {
     private static Person instance = new Person("zs");

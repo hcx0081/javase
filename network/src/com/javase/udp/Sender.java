@@ -7,7 +7,7 @@ import java.net.InetAddress;
 import java.nio.charset.StandardCharsets;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class Sender {
     public static void main(String[] args) {

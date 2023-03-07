@@ -4,7 +4,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class URLTest {
     public static void main(String[] args) throws MalformedURLException {

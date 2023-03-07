@@ -3,7 +3,7 @@ package com.javase.date;
 import java.util.GregorianCalendar;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class CalendarTest {
     public static void main(String[] args) {

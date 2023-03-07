@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.TreeSet;
 
 /**
- * @description:
+ * {@code @Description:}
  */
 public class TreeSetTest {
     public static void main(String[] args) {

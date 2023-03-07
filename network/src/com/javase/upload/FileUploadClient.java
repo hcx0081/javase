@@ -8,7 +8,7 @@ import java.net.InetAddress;
 import java.net.Socket;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class FileUploadClient {
     public static void main(String[] args) {

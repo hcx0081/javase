@@ -1,7 +1,7 @@
 package com.javase.lambda;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class Person {
     private String name;

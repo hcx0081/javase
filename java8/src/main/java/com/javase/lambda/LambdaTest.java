@@ -3,7 +3,7 @@ package com.javase.lambda;
 import java.util.Comparator;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class LambdaTest {
     public static void main(String[] args) {

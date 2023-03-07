@@ -4,7 +4,7 @@ import java.lang.annotation.Inherited;
 import java.lang.annotation.Repeatable;
 
 /**
- * @Description: 自定义注解
+ * {@code @Description:} 自定义注解
  */
 @Inherited
 @Repeatable(MyAnnotationList.class)

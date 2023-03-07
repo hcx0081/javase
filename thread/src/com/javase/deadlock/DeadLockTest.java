@@ -1,7 +1,7 @@
 package com.javase.deadlock;
 
 /**
- * @description:
+ * {@code @Description:}
  */
 public class DeadLockTest {
     public static void main(String[] args) {

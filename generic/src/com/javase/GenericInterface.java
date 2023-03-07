@@ -2,7 +2,7 @@ package com.javase;
 
 
 /**
- * @description:
+ * {@code @Description:}
  */
 interface Usb<T> {
     T con(T t);

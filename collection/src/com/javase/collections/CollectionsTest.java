@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class CollectionsTest {
     public static void main(String[] args) {

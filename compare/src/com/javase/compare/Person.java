@@ -1,7 +1,7 @@
 package com.javase.compare;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class Person implements Comparable<Person> {
     private String name;
@@ -37,7 +37,7 @@ public class Person implements Comparable<Person> {
         if (this.age < o.age) {
             return -1;
         }
-        // return 0// 不排序姓名
+        // return 0;// 不排序姓名
         return this.name.compareTo(o.name);// 排序姓名
     }
 }

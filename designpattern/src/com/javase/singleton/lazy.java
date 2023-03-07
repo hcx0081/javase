@@ -1,7 +1,7 @@
 package com.javase.singleton;
 
 /**
- * @description: 懒汉式
+ * {@code @Description:} 懒汉式
  */
 class Man {
     private static Man man;

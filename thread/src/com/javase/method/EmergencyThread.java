@@ -2,7 +2,7 @@ package com.javase.method;
 
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class EmergencyThread implements Runnable {
     @Override

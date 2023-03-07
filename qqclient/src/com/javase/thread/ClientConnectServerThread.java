@@ -7,7 +7,7 @@ import java.io.ObjectInputStream;
 import java.net.Socket;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class ClientConnectServerThread extends Thread {
     private Socket socket;

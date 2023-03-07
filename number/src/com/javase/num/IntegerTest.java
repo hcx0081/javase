@@ -1,7 +1,7 @@
 package com.javase.num;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class IntegerTest {
     public static void main(String[] args) {

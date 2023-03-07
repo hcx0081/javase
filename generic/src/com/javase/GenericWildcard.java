@@ -3,7 +3,7 @@ package com.javase;
 import java.util.List;
 
 /**
- * @description:
+ * {@code @Description:}
  */
 public class GenericWildcard {
     public static void main(String[] args) {

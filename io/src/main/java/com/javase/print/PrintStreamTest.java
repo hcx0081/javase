@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.io.*;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class PrintStreamTest {
     

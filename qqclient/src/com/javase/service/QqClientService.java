@@ -13,7 +13,7 @@ import java.net.Socket;
 
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class QqClientService {
     private User user = new User();

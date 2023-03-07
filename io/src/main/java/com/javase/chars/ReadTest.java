@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class ReadTest {
     public static void main(String[] args) {

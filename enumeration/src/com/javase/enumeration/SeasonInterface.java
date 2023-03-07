@@ -1,7 +1,7 @@
 package com.javase.enumeration;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 interface Info {
     void show();

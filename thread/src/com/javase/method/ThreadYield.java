@@ -1,7 +1,7 @@
 package com.javase.method;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class ThreadYield {
     public static void main(String[] args) throws InterruptedException {

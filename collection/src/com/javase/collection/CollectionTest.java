@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class CollectionTest {
     public static void main(String[] args) {

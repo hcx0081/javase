@@ -7,7 +7,7 @@ import java.util.Comparator;
 import java.util.function.Consumer;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class MethodRefTest {
     @Test

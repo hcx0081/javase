@@ -3,7 +3,7 @@ package com.javase.view;
 import java.util.Scanner;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class QqView {
     private boolean loop = true;

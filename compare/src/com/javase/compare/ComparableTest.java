@@ -3,7 +3,7 @@ package com.javase.compare;
 import java.util.Arrays;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class ComparableTest {
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package com.javase.sale;
 
 /**
- * @description:
+ * {@code @Description:}
  */
 class WindowByRunnable implements Runnable {
     private int ticket = 5;

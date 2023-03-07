@@ -3,7 +3,7 @@ package com.javase.map;
 import java.util.Objects;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class Person {
     private String name;

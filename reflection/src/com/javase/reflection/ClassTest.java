@@ -1,7 +1,7 @@
 package com.javase.reflection;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class ClassTest {
     public static void main(String[] args) throws ClassNotFoundException {
@@ -14,7 +14,7 @@ public class ClassTest {
         Person person = new Person();
         Class<? extends Person> person3Class = person.getClass();
         System.out.println(person3Class);// class com.javase.reflection.Person
-    
+        
         // 等同于：ClassLoader classLoader = Person.class.getClassLoader();
         ClassLoader classLoader = person.getClass().getClassLoader();
         Class<?> person4Class = classLoader.loadClass("com.javase.reflection.Person");

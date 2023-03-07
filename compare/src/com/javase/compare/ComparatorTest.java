@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class ComparatorTest {
     public static void main(String[] args) {

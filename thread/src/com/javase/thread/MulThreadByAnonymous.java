@@ -3,7 +3,7 @@ package com.javase.thread;
 import static java.lang.Thread.sleep;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class MulThreadByAnonymous {
     public static void main(String[] args) {

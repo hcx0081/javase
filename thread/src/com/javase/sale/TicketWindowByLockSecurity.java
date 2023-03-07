@@ -3,7 +3,7 @@ package com.javase.sale;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 class WindowByLockSecurity implements Runnable {
     private int ticket = 100;

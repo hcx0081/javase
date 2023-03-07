@@ -1,7 +1,7 @@
 package com.javase.random;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class RandomAccessFileTest {
     public static void main(String[] args) {

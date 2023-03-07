@@ -1,7 +1,7 @@
 package com.javase.optional;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class Person {
     private String name;

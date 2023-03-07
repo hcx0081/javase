@@ -1,7 +1,7 @@
 package com.javase.enumeration;
 
 /**
- * @description: 使用enum关键字定义枚举类
+ * {@code @Description:} 使用enum关键字定义枚举类
  */
 public enum SeasonEnum {
     // 枚举成员默认被public static final修饰

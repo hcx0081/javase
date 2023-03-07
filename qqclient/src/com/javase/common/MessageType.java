@@ -1,7 +1,7 @@
 package com.javase.common;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public enum MessageType {
     

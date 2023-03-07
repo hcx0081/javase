@@ -3,7 +3,7 @@ package com.javase.set;
 import java.util.HashSet;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class HashSetTest {
     public static void main(String[] args) {

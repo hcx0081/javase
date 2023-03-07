@@ -9,7 +9,7 @@ import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class SocketClient {
     public static void main(String[] args) {

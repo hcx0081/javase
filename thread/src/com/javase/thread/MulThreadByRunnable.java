@@ -1,7 +1,7 @@
 package com.javase.thread;
 
 /**
- * @description:
+ * {@code @Description:}
  */
 class MyRunnable implements Runnable {
     @Override

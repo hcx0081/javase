@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class OutputStreamWriterTest {
     public static void main(String[] args) {

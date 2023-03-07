@@ -3,7 +3,7 @@ package com.javase.thread;
 import static java.lang.Thread.sleep;
 
 /**
- * @description:
+ * {@code @Description:}
  */
 class MyThread extends Thread {
     @Override

@@ -3,7 +3,7 @@ package com.javase.map;
 import java.util.TreeMap;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class TreeMapTest {
     public static void main(String[] args) {

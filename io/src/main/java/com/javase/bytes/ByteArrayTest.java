@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class ByteArrayTest {
     public static void main(String[] args) {

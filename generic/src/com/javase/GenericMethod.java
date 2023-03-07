@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class GenericMethod {
     public static void main(String[] args) {

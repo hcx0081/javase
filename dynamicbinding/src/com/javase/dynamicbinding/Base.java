@@ -1,7 +1,7 @@
 package com.javase.dynamicbinding;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class Base {
     public void methodOne() {

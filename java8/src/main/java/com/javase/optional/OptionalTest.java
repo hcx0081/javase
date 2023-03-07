@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.Optional;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class OptionalTest {
     @Test
@@ -29,5 +29,4 @@ public class OptionalTest {
         Optional<Person> optional = Optional.ofNullable(person);
         return optional.orElse(new Person()).getName();
     }
-    
 }

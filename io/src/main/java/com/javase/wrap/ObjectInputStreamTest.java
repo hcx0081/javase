@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class ObjectInputStreamTest {
     public static void main(String[] args) {

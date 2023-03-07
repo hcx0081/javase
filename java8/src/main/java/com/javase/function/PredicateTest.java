@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.function.Predicate;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class PredicateTest {
     @Test
@@ -20,7 +20,7 @@ public class PredicateTest {
         // String result = find(list, "张三");
         // System.out.println(result);
         
-        /* Java 8.0 */
+        /* Java 8 */
         // String result = findByPredicate(list, new Predicate<String>() {
         //     @Override
         //     public boolean test(String name) {
@@ -52,4 +52,3 @@ public class PredicateTest {
         return "未找到";
     }
 }
-

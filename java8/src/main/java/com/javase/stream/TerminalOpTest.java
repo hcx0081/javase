@@ -9,7 +9,7 @@ import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class TerminalOpTest {
     List<String> list = new ArrayList<>();

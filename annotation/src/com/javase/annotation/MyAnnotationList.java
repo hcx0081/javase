@@ -3,7 +3,7 @@ package com.javase.annotation;
 import java.lang.annotation.Inherited;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 @Inherited
 public @interface MyAnnotationList {

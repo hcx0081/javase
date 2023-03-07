@@ -1,7 +1,7 @@
 package com.javase.reflection;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class Person {
     public String name;

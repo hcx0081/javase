@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class FileCopyByBuffer {
     public static void main(String[] args) {

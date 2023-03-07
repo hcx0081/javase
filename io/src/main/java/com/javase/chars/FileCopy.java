@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- * @description:
+ * {@code @Description:}
  */
 public class FileCopy {
     public static void main(String[] args) {

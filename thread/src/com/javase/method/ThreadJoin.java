@@ -1,7 +1,7 @@
 package com.javase.method;
 
 /**
- * @description:
+ * {@code @Description:}
  */
 public class ThreadJoin {
     public static void main(String[] args) throws InterruptedException {

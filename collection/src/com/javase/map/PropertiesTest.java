@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class PropertiesTest {
     public static void main(String[] args){

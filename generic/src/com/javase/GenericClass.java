@@ -1,7 +1,7 @@
 package com.javase;
 
 /**
- * @description:
+ * {@code @Description:}
  */
 class Person<T> {
     T name;

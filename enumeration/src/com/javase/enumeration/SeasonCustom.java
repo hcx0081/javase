@@ -1,7 +1,7 @@
 package com.javase.enumeration;
 
 /**
- * @description: 自定义枚举类
+ * {@code @Description:} 自定义枚举类
  */
 public class SeasonCustom {
     public static final SeasonCustom SPRING = new SeasonCustom("春天", "温暖");

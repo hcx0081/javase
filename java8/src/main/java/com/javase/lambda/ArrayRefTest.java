@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.function.Function;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class ArrayRefTest {
     @Test

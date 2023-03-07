@@ -1,7 +1,7 @@
 package com.javase.sale;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 class WindowByThreadSecurity extends Thread {
     private static int ticket = 100;

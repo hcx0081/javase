@@ -1,7 +1,7 @@
 package com.javase;
 
 /**
- * @description: 自定义异常
+ * {@code @Description:} 自定义异常
  */
 class DivideByZeroException extends RuntimeException {
     public DivideByZeroException(String message) {

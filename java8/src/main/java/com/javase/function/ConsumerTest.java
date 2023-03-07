@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.function.Consumer;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class ConsumerTest {
     Integer sum = 500;
@@ -15,7 +15,7 @@ public class ConsumerTest {
         consume(100);
         System.out.println(sum);
         
-        /* Java 8.0 */
+        /* Java 8 */
         consumeByConsumer(100, new Consumer<Integer>() {
             @Override
             public void accept(Integer money) {
