@@ -26,11 +26,11 @@ public class QqClientService {
         try {
             socket = new Socket(InetAddress.getLocalHost(), 9999);
             
-            //获取
+            // 获取
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(socket.getOutputStream());
             objectOutputStream.writeObject(user);
             
-            //发送
+            // 发送
             ObjectInputStream objectInputStream = new ObjectInputStream(socket.getInputStream());
             Message Message = (Message) objectInputStream.readObject();
             

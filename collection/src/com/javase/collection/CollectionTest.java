@@ -14,7 +14,7 @@ public class CollectionTest {
         
         Collection list2 = new ArrayList();
         list2.add(new String("1"));
-    
+        
         System.out.println(list.containsAll(list2));
     }
 }

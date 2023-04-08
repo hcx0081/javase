@@ -7,14 +7,14 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 class WindowByLockSecurity implements Runnable {
     private int ticket = 100;
-    // 如果是继承Thread类方式则需要使用static修饰
-    private /* static */ ReentrantLock lock = new ReentrantLock();
+    // 如果是继承Thread类方式需要使用static修饰
+    private /* static */ ReentrantLock lock = new ReentrantLock();// 非公平锁
     
     @Override
     public void run() {
         while (true) {
             try {
-                // 加锁
+                // 上锁
                 lock.lock();
                 try {
                     Thread.sleep(10);

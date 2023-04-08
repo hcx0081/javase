@@ -19,8 +19,8 @@ public class CustomException {
         int result = a / b;
         System.out.println(result);
         /*
-        * Exception in thread "main" com.javase.DivideByZeroException: 除数不能是0
-        *   at com.javase.CustomException.main(CustomException.java:17)
-        *  */
+         * Exception in thread "main" com.javase.DivideByZeroException: 除数不能是0
+         *   at com.javase.CustomException.main(CustomException.java:17)
+         *  */
     }
 }

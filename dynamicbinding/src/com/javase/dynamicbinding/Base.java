@@ -15,6 +15,11 @@ public class Base {
 }
 
 class Derived extends Base {
+    public static void main(String[] args) {
+        Base b = new Derived();
+        b.methodOne();// ABCD
+    }
+    
     public void methodOne() {
         super.methodOne();
         System.out.print("D");
@@ -23,10 +28,5 @@ class Derived extends Base {
     public void methodTwo() {
         super.methodTwo();
         System.out.print("C");
-    }
-    
-    public static void main(String[] args) {
-        Base b = new Derived();
-        b.methodOne();// ABCD
     }
 }

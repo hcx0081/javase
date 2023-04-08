@@ -1,15 +1,9 @@
 package com.javase.enumeration;
 
-/**
- * {@code @Description:}
- */
-interface Info {
-    void show();
-}
-
 public enum SeasonInterface implements Info {
     // 枚举成员默认被public static final修饰
     SPRING("春天", "温暖") {// public static final SeasonEnum SPRING = new SeasonInterface("春天", "温暖");
+        
         @Override
         public void show() {
             System.out.println("春天在哪里");
@@ -62,6 +56,13 @@ public enum SeasonInterface implements Info {
     //             ", desc='" + desc + '\'' +
     //             '}';
     // }
+}
+
+/**
+ * {@code @Description:}
+ */
+interface Info {
+    void show();
 }
 
 class m {

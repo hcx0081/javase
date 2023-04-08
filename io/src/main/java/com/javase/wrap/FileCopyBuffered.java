@@ -62,7 +62,7 @@ public class FileCopyBuffered {
                 // bufferedWriter.write(len);
                 bufferedWriter.write(buffer, 0, len);
             } */
-    
+            
             String data;
             while ((data = bufferedReader.readLine()) != null) {
                 bufferedWriter.write(data);

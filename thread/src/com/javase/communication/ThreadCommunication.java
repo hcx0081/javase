@@ -9,8 +9,8 @@ class Number implements Runnable {
     
     /**
      * wait()、notify()、notifyAll()
-     * 这三个方法必须使用在同步代码块、同步方法中，且调用对象必须是同步代码块、同步方法中的锁对象
-     * 这三个方法是Object类中的方法
+     * 这三个方法必须使用在同步代码块、同步方法中，并且调用对象必须是同步代码块、同步方法中的锁
+     * 这三个方法是Object类的方法
      */
     @Override
     public void run() {

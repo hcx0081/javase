@@ -17,7 +17,7 @@ public class TreeSetTest {
         System.out.println(treeSet);// [1, 2, 3, 4]
         
         
-        Comparator<Person> comparator=new Comparator<Person>() {
+        Comparator<Person> comparator = new Comparator<Person>() {
             // 指定Person的排序方式：先按照年龄从低到高进行排序，再按照姓名从低到高进行排序
             @Override
             public int compare(Person o1, Person o2) {

@@ -24,7 +24,7 @@ public class IntegerTest {
         Integer i9 = Integer.valueOf(127);
         Integer i10 = Integer.valueOf(127);
         System.out.println(i9 == i10);// true
-    
+        
         Integer i11 = Integer.valueOf(128);
         Integer i12 = Integer.valueOf(128);
         System.out.println(i11 == i12);// false

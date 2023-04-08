@@ -45,13 +45,13 @@ public class StreamTest {
         
         // 迭代流，以0为初始元素，每次增加2
         Stream.iterate(0, t -> t + 2)
-                .limit(10)
-                .forEach(System.out::println);
+              .limit(10)
+              .forEach(System.out::println);
         
         
         // 无限流，无限生成[0, 1)的数
         Stream.generate(Math::random)
-                .limit(10)
-                .forEach(System.out::println);
+              .limit(10)
+              .forEach(System.out::println);
     }
 }

@@ -25,16 +25,16 @@ public class HashSetTest {
         hashSet.add(p4);
         System.out.println(hashSet);
         /*
-        * 没重写equals()和hashCode()时输出的是：
-        * [Person{name='BB', age=11}]
-        * [Person{name='CC', age=10}, Person{name='BB', age=11}]
-        * [Person{name='CC', age=10}, Person{name='BB', age=11}, Person{name='AA', age=10}]
-        *  */
+         * 没重写equals()和hashCode()时输出的是：
+         * [Person{name='BB', age=11}]
+         * [Person{name='CC', age=10}, Person{name='BB', age=11}]
+         * [Person{name='CC', age=10}, Person{name='BB', age=11}, Person{name='AA', age=10}]
+         *  */
         /*
-        * 重写equals()和hashCode()后输出的是：
-        * [Person{name='CC', age=10}, Person{name='BB', age=11}]// p1的存储位置未改变，根据修改属性name后的p1计算出来的hash值与原来的p1不相同，所以可以添加
-        * [Person{name='CC', age=10}, Person{name='BB', age=11}, Person{name='CC', age=10}]// 同上
-        * [Person{name='CC', age=10}, Person{name='AA', age=10}, Person{name='BB', age=11}, Person{name='CC', age=10}]// p4计算出来的hash值与原来的p1相同，但是根据equals()判断为不相等的对象，所以可以添加
-        *  */
+         * 重写equals()和hashCode()后输出的是：
+         * [Person{name='CC', age=10}, Person{name='BB', age=11}]// p1的存储位置未改变，根据修改属性name后的p1计算出来的hash值与原来的p1不相同，所以可以添加
+         * [Person{name='CC', age=10}, Person{name='BB', age=11}, Person{name='CC', age=10}]// 同上
+         * [Person{name='CC', age=10}, Person{name='AA', age=10}, Person{name='BB', age=11}, Person{name='CC', age=10}]// p4计算出来的hash值与原来的p1相同，但是根据equals()判断为不相等的对象，所以可以添加
+         *  */
     }
 }

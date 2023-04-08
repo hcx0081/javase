@@ -20,12 +20,12 @@ public class Regexp {
         /*提取段落中的字母*/
         /*提取段落中的数字*/
         /*提取段落中的字母和数字*/
-        //1.传统方法，使用遍历，代码量大，效率不高
+        // 1.传统方法，使用遍历，代码量大，效率不高
         
-        //2.使用正则表达式
+        // 2.使用正则表达式
         
-        //Pattern pattern = Pattern.compile("[a-zA-Z]+");
-        //Pattern pattern = Pattern.compile("[0-9]+");
+        // Pattern pattern = Pattern.compile("[a-zA-Z]+");
+        // Pattern pattern = Pattern.compile("[0-9]+");
         Pattern pattern = Pattern.compile("([a-zA-Z]+)|([0-9]+)");
         Matcher matcher = pattern.matcher(content);
         while (matcher.find()) {

@@ -9,7 +9,7 @@ public class ThreadJoin {
         thread.start();
         
         for (int i = 0; i < 4; i++) {
-            if (i == 2) {// 当主线程i为2时让线程插队，等到插队的线程执行完成后主线程才继续执行
+            if (i == 2) {// 当主线程i为2时让线程插队，等到插队的线程执行完成之后主线程才能继续运行
                 thread.join();
             }
             Thread.sleep(1000);

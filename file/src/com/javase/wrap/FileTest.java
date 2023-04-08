@@ -12,13 +12,16 @@ public class FileTest {
         File fileDest = new File("E:\\hi\\hi.jpg");
         // boolean b = fileSrc.renameTo(fileDest);
         // System.out.println(b);
-    
-        System.out.println(fileSrc.canRead());
-        System.out.println(fileSrc.canWrite());
-        System.out.println(fileSrc.isHidden());
-    
-        System.out.println(fileDest.canRead());
-        System.out.println(fileDest.canWrite());
-        System.out.println(fileDest.isHidden());
+        
+        // System.out.println(fileSrc.canRead());
+        // System.out.println(fileSrc.canWrite());
+        // System.out.println(fileSrc.isHidden());
+        
+        // System.out.println(fileDest.canRead());
+        // System.out.println(fileDest.canWrite());
+        // System.out.println(fileDest.isHidden());
+        
+        File fileIgn = new File(".gitignore");
+        System.out.println(fileIgn.canWrite());
     }
 }

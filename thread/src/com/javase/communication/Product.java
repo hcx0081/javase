@@ -10,7 +10,7 @@ package com.javase.communication;
 class Clerk {
     private int productCount = 0;
     
-    // 店员添加商品，该同步方法的锁对象为clerk对象
+    // 店员添加商品，该同步方法的锁为clerk对象
     public synchronized void addProduct() {
         if (productCount < 20) {
             System.out.println("店员开始添加第" + (++productCount) + "个商品");
@@ -26,8 +26,8 @@ class Clerk {
         }
     }
     
-    /* 上下两个方法共用一个锁对象，即clerk对象 */
-    // 店员减少商品，该同步方法的锁对象为clerk对象
+    /* 上下两个方法共用一个锁，即clerk对象 */
+    // 店员减少商品，该同步方法的锁为clerk对象
     public synchronized void subProduct() {
         if (productCount > 0) {
             System.out.println("店员开始减少第" + (productCount--) + "个商品");

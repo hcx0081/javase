@@ -28,15 +28,19 @@ class DeadLockThread extends Thread {
     @Override
     public void run() {
         if (flag) {
+            // 获得锁1
             synchronized (lock1) {
                 System.out.println(Thread.currentThread().getName() + "进入1");
+                // 尝试获得锁2
                 synchronized (lock2) {
                     System.out.println(Thread.currentThread().getName() + "进入2");
                 }
             }
         } else {
+            // 获得锁2
             synchronized (lock2) {
                 System.out.println(Thread.currentThread().getName() + "进入3");
+                // 尝试获得锁1
                 synchronized (lock1) {
                     System.out.println(Thread.currentThread().getName() + "进入4");
                 }

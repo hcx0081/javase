@@ -22,7 +22,7 @@ public class MulThreadByRunnable {
         MyRunnable myRunnable = new MyRunnable();
         Thread thread = new Thread(myRunnable);
         
-        /* 调用start()方法表示开启新线程，实现多线程，即主线程和该线程一起运行 */
+        /* 调用start()方法表示开启新线程，实现多线程，主线程和该线程一起运行 */
         thread.start();
         
         while (true) {

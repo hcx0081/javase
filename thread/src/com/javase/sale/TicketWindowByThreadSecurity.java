@@ -8,6 +8,21 @@ class WindowByThreadSecurity extends Thread {
     private static boolean loop = true;
     private static Object lock = new Object();
     
+    // 需要使用static修饰
+    public static synchronized void sendTicket() throws InterruptedException {
+        // 注意此处不可以使用this
+        // synchronized (WindowByThreadSecurity.class) {
+        // synchronized (lock) {
+        Thread.sleep(10);
+        if (ticket <= 0) {
+            System.out.println("售罄");
+            loop = false;
+            return;
+        }
+        System.out.println(Thread.currentThread().getName() + "窗口卖了一张票，剩余：" + (--ticket) + "票");
+        // }
+    }
+    
     @Override
     public void run() {
         
@@ -39,21 +54,6 @@ class WindowByThreadSecurity extends Thread {
                 e.printStackTrace();
             }
         }
-    }
-    
-    // 需要使用static修饰
-    public static synchronized void sendTicket() throws InterruptedException {
-        // 注意此处不可以使用this
-        // synchronized (WindowByThreadSecurity.class) {
-        // synchronized (lock) {
-        Thread.sleep(10);
-        if (ticket <= 0) {
-            System.out.println("售罄");
-            loop = false;
-            return;
-        }
-        System.out.println(Thread.currentThread().getName() + "窗口卖了一张票，剩余：" + (--ticket) + "票");
-        // }
     }
 }
 

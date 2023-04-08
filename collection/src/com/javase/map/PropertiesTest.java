@@ -9,7 +9,7 @@ import java.util.Properties;
  * {@code @Description:}
  */
 public class PropertiesTest {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Properties properties = new Properties();
         FileInputStream fis = null;
         try {
@@ -30,7 +30,7 @@ public class PropertiesTest {
                 }
             }
         }
-    
+        
         FileOutputStream fos = null;
         try {
             fos = new FileOutputStream("collection\\src\\com\\javase\\resources\\jdbc.properties");

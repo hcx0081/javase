@@ -24,10 +24,10 @@ public class MulThreadByCallable {
     public static void main(String[] args) {
         MyCallable myCallable = new MyCallable();
         FutureTask<Object> futureTask = new FutureTask<>(myCallable);
-        // 因为FutureTask实现了Runnable接口，所以可以传入该构造器
+        // 因为FutureTask实现Runnable接口，所以可以传入该构造器
         Thread thread = new Thread(futureTask);
         
-        /* 调用start()方法表示开启新线程，实现多线程，即主线程和该线程一起运行 */
+        /* 调用start()方法表示开启新线程，实现多线程，主线程和该线程一起运行 */
         thread.start();
         
         while (true) {
