@@ -4,7 +4,7 @@ package com.javase.enumeration;
  * {@code @Description:} 使用enum关键字定义枚举类
  */
 public enum SeasonEnum {
-    // 枚举成员默认被public static final修饰
+    // 枚举成员默认使用public static final修饰
     SPRING("春天", "温暖"),// public static final SeasonEnum SPRING = new SeasonEnum("春天", "温暖");
     SUMMER("夏天", "炎热"),
     AUTUMN("秋天", "凉爽"),
